@@ -37,7 +37,7 @@ export async function POST(
         price: parseInt(price, 10),
         userId: currentUser.id
         }
-    })
+    });
 
     return NextResponse.json(listing);
 }
